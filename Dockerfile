@@ -1,4 +1,4 @@
-FROM amazoncorretto:18-alpine-jdk
+FROM amazoncorretto:17-alpine-jdk
 MAINTAINER RS
 COPY target/rs-0.0.1-SNAPSHOT.jar rs-app.jar
 ENTRYPOINT ["java","-jar","/rs-app.jar"]
